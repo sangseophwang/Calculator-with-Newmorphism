@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock-weather">
+        <div class="clock_body">
+          <div class="clock_body-inner">
+            <h1 class="clock_number"></h1>
+          </div>
+        </div>
+
+        <div class="weather_body"></div>
+      </div>
+
+      <div class="calculator">
+        <form name="forms">
+          <input readonly type="text" class="text" name="output" />
+          <input
+            type="button"
+            class="button clear"
+            value="C"
+            onclick="document.forms.output.value=''"
+          />
+          <input
+            type="button"
+            class="button operator"
+            value="÷"
+            onclick="document.forms.output.value+='/'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="1"
+            onclick="document.forms.output.value+='1'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="2"
+            onclick="document.forms.output.value+='2'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="3"
+            onclick="document.forms.output.value+='3'"
+          />
+          <input
+            type="button"
+            class="button operator"
+            value="x"
+            onclick="document.forms.output.value+='*'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="4"
+            onclick="document.forms.output.value+='4'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="5"
+            onclick="document.forms.output.value+='5'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="6"
+            onclick="document.forms.output.value+='6'"
+          />
+          <input
+            type="button"
+            class="button operator"
+            value="+"
+            onclick="document.forms.output.value+='+'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="7"
+            onclick="document.forms.output.value+='7'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="8"
+            onclick="document.forms.output.value+='8'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="9"
+            onclick="document.forms.output.value+='9'"
+          />
+          <input
+            type="button"
+            class="button operator"
+            value="-"
+            onclick="document.forms.output.value+='-'"
+          />
+          <input
+            type="button"
+            class="button dot"
+            value="."
+            onclick="document.forms.output.value+='.'"
+          />
+          <input
+            type="button"
+            class="button"
+            value="0"
+            onclick="document.forms.output.value+='0'"
+          />
+          <input
+            type="button"
+            class="button operator result"
+            value="="
+            onclick="document.forms.output.value=eval(document.forms.output.value)"
+          />
+        </form>
+      </div>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>
