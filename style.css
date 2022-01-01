@@ -21,12 +21,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.clock-weather {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .calculator {
   width: 340px;
   height: 500px;
@@ -52,10 +46,12 @@ input {
   outline: none;
   border-radius: 13px;
   background: #e0e0e0;
+  transition: 0.3s;
   box-shadow: 5px 5px 18px #cecece, -3px -3px 10px #f0f0f0;
 }
 
 .button:hover {
+  transition: 0.3s;
   cursor: pointer;
   color: teal;
 }
